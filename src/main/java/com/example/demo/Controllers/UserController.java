@@ -19,7 +19,8 @@ import com.example.demo.repos.UserRepository;
 @RestController
 @RequestMapping("/users")
 public class UserController {
-    
+    // Repository'i controllere direkt baglamak pek tercih edilmez
+    // Business Logic vs baska kodda olmalı - Servis Layer
     private UserRepository userRepository;
 
     // Spring Context veriyor
