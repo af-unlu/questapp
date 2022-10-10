@@ -6,12 +6,12 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.Requests.PostCreateRequest;
-import com.example.demo.Requests.PostUpdateRequest;
-import com.example.demo.Responses.PostResponse;
 import com.example.demo.entities.Post;
 import com.example.demo.entities.User;
 import com.example.demo.repos.PostRepository;
+import com.example.demo.requests.PostCreateRequest;
+import com.example.demo.requests.PostUpdateRequest;
+import com.example.demo.responses.PostResponse;
 @Service
 public class PostService {
     

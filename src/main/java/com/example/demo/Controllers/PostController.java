@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Requests.PostCreateRequest;
-import com.example.demo.Requests.PostUpdateRequest;
-import com.example.demo.Responses.PostResponse;
 import com.example.demo.entities.Post;
+import com.example.demo.requests.PostCreateRequest;
+import com.example.demo.requests.PostUpdateRequest;
+import com.example.demo.responses.PostResponse;
 import com.example.demo.services.PostService;
 
 @RestController
