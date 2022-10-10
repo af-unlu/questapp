@@ -1,7 +1,6 @@
 package com.example.demo.Controllers;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +20,7 @@ import com.example.demo.services.UserService;
 public class UserController {
     // Repository'i controllere direkt baglamak pek tercih edilmez
     // Business Logic vs baska kodda olmalı - Servis Layer
+    // sadece hangi duruma hangi fonksiyon çalışacak o
 
     UserService userService;
 
@@ -38,10 +38,8 @@ public class UserController {
         return userService.createUser(newUser);
     }
 
-    // Java optionals 
     @GetMapping("/{userId}")
     public User getOneUser(@PathVariable Long userId){
-        // custom exception 
         return userService.findById(userId);
     }
 
