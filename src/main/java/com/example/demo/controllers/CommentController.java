@@ -1,4 +1,4 @@
-package com.example.demo.Controllers;
+package com.example.demo.controllers;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.entities.Comment;
 import com.example.demo.requests.CommentCreateRequest;
 import com.example.demo.requests.CommentUpdateRequest;
-import com.example.demo.requests.PostUpdateRequest;
 import com.example.demo.responses.CommentResponse;
 import com.example.demo.services.CommentService;
 

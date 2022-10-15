@@ -3,6 +3,8 @@ package com.example.demo.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.example.demo.entities.Comment;
 import com.example.demo.requests.CommentCreateRequest;
 import com.example.demo.requests.CommentUpdateRequest;
@@ -10,10 +12,10 @@ import com.example.demo.responses.CommentResponse;
 
 import com.example.demo.repos.CommentRepository;
 
+@Service
 public class CommentService {
     
     private CommentRepository commentRepository;
-    
     private PostService postService;
     
     public CommentService(CommentRepository commentRepository, PostService postService) {
@@ -38,9 +40,5 @@ public class CommentService {
     }
 
     public void deleteOneComment(Long commentId) {
-    }
-
-
-
-    
+    }    
 }
