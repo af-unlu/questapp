@@ -1,3 +1,3 @@
-..//comments
-..//comments?postId=XX&userId=XX
-..//comments/commentID
+//comments
+//comments?postId=XX&userId=XX
+//comments/commentID
